@@ -18,8 +18,8 @@ class MainActivity : AppCompatActivity() {
 
         setTheme(R.style.Theme_SusansGreeenCleaning)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+//        binding = ActivityMainBinding.inflate(layoutInflater)
+//        setContentView(binding.root)
 
 //        val navHostFragment = activityNavHost as NavHostFragment
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.activityNavHost) as NavHostFragment
