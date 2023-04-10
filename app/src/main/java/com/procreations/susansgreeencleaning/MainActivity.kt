@@ -13,16 +13,16 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
 
         setTheme(R.style.Theme_SusansGreeenCleaning)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-//        binding = ActivityMainBinding.inflate(layoutInflater)
-//        setContentView(binding.root)
-
-//        val navHostFragment = activityNavHost as NavHostFragment
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.activityNavHost) as NavHostFragment
         navController = navHostFragment.navController
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        return navController.navigateUp() || super.onSupportNavigateUp()
     }
 }
