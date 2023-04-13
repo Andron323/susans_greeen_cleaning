@@ -5,5 +5,13 @@
     <color name="green_dark">#196A70</color>
     <color name="black_headline">#182738</color>
     <color name="black">#000000</color>
+    <color name="gray">#6F7883</color>
+    <color name="gray_sub_title">#6B6B6B</color>
+    <color name="gray_light">#BCBCBC</color>
+    <color name="gray_dark">#464646</color>
+    <color name="gray_border">#EEEEEE</color>
+    <color name="gray_hint">#828282</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="yellow">#FBBC05</color>
     <color name="white">#FFFFFFFF</color>
 </resources>
