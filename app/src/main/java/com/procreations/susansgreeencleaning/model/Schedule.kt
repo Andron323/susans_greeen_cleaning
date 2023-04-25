@@ -9,6 +9,8 @@ data class Schedule(
     @SerializedName("title") var title: String? = null,
     @SerializedName("subTitle") var subTitle: String? = null,
     @SerializedName("time") var time: String? = null,
+    @SerializedName("date") var date: String? = null,
+    @SerializedName("repeat") var repeat: String? = null,
     @SerializedName("content") var content: String? = null
 )
 

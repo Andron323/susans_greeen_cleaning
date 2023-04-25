@@ -3,15 +3,17 @@ package com.procreations.susansgreeencleaning.ui.reminder
 import android.view.View
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
+import com.github.clans.fab.FloatingActionButton
+import com.github.clans.fab.FloatingActionMenu
 import com.google.android.material.button.MaterialButton
-import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class ReminderPresenter(var controller: ReminderFragment) {
 
     var notification : ArrayList<ImageView> = ArrayList()
 
     lateinit var rvSchedule: RecyclerView
-    lateinit var floatingAddBtn: FloatingActionButton
+    lateinit var fabGeneral: FloatingActionButton
+    lateinit var fabStandart: FloatingActionButton
 
     init {
         initUI()
@@ -23,7 +25,8 @@ class ReminderPresenter(var controller: ReminderFragment) {
         notification.add(controller.binding.notificationOff)
 
         rvSchedule = controller.binding.rvSchedule
-        floatingAddBtn = controller.binding.floatingAddBtn
+        fabGeneral = controller.binding.fabGeneral
+        fabStandart = controller.binding.fabStandart
     }
 
     fun setupNotification(state:Int) {

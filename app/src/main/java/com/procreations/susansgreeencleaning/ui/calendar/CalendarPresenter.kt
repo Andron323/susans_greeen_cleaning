@@ -12,9 +12,9 @@ class CalendarPresenter(var controller: CalendarFragment) {
 
     lateinit var calendarView: CalendarView
 
-    lateinit var setDate: EditText
-    lateinit var setTime: EditText
-    lateinit var repeat: EditText
+    lateinit var setDate: TextView
+    lateinit var setTime: TextView
+    lateinit var repeat: TextView
     lateinit var newReminder: EditText
 
     lateinit var saveTxt: TextView

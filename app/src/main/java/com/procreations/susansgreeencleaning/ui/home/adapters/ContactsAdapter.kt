@@ -12,9 +12,11 @@ import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.procreations.susansgreeencleaning.MainActivity
 import com.procreations.susansgreeencleaning.R
 import com.procreations.susansgreeencleaning.model.Contact
 import com.procreations.susansgreeencleaning.ui.home.HomeFragment
+import com.procreations.susansgreeencleaning.utils.UrlsData
 
 
 class ContactsAdapter(
@@ -67,7 +69,8 @@ class ContactsAdapter(
             titleName.text = itemList?.title
 
             itemContact.setOnClickListener {
-                Toast.makeText(controller.context, "Will be action to ${itemList?.title}", Toast.LENGTH_SHORT).show()
+//                Toast.makeText(controller.context, "Will be action to ${itemList?.title}", Toast.LENGTH_SHORT).show()
+                (controller.activity as MainActivity).openUrl(itemList?.content.toString())
             }
         }
     }

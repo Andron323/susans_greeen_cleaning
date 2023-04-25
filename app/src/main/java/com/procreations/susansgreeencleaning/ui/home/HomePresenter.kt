@@ -20,7 +20,7 @@ class HomePresenter(var controller: HomeFragment) {
 
     init {
         initUI()
-        setupNotification(1)
+        setupNotification(0)
     }
 
     private fun initUI() {

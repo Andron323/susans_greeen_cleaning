@@ -14,6 +14,7 @@ import androidx.navigation.Navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.procreations.susansgreeencleaning.MainActivity
 import com.procreations.susansgreeencleaning.R
 import com.procreations.susansgreeencleaning.model.AboutUs
 import com.procreations.susansgreeencleaning.ui.home.HomeFragment
@@ -71,7 +72,8 @@ class AboutUsAdapter(
             subTitle.text = itemList?.subTitle
 
             itemContact.setOnClickListener {
-                controller.findNavController().navigate(R.id.action_homeFragment_to_reminderFragment)
+//                Toast.makeText(controller.context, "Will be something if needed ${itemList?.title}", Toast.LENGTH_SHORT).show()
+                (controller.activity as MainActivity).openUrl(itemList?.content!!)
             }
         }
     }

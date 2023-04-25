@@ -16,9 +16,6 @@
             app:enterAnim="@anim/enter_from_right"
             app:exitAnim="@anim/exit_to_left"/>
         <action
-            android:id="@+id/action_welcomeFragment_to_browserFragment2"
-            app:destination="@id/browserFragment" />
-        <action
             android:id="@+id/action_welcomeFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
     </fragment>
@@ -34,9 +31,6 @@
             app:exitAnim="@anim/exit_to_left"
             app:popEnterAnim="@anim/enter_from_left"
             app:popExitAnim="@anim/exit_to_right"/>
-        <action
-            android:id="@+id/action_homeFragment_to_browserFragment"
-            app:destination="@id/browserFragment" />
     </fragment>
     <fragment
         android:id="@+id/sorryFragment"
@@ -45,14 +39,7 @@
         tools:layout="@layout/fragment_sorry" >
         <action
             android:id="@+id/action_sorryFragment_to_homeFragment"
-            app:destination="@id/homeFragment"
-            app:enterAnim="@anim/enter_from_right"
-            app:exitAnim="@anim/exit_to_left"
-            app:popEnterAnim="@anim/enter_from_left"
-            app:popExitAnim="@anim/exit_to_right"/>
-        <action
-            android:id="@+id/action_sorryFragment_to_browserFragment"
-            app:destination="@id/browserFragment" />
+            app:destination="@id/homeFragment" />
     </fragment>
     <fragment
         android:id="@+id/reminderFragment"
@@ -66,38 +53,10 @@
             app:exitAnim="@anim/exit_to_left"
             app:popEnterAnim="@anim/enter_from_left"
             app:popExitAnim="@anim/exit_to_right"/>
-        <action
-            android:id="@+id/action_reminderFragment_to_browserFragment"
-            app:destination="@id/browserFragment" />
     </fragment>
     <fragment
         android:id="@+id/calendarFragment"
         android:name="com.procreations.susansgreeencleaning.ui.calendar.CalendarFragment"
         android:label="fragment_calendar"
-        tools:layout="@layout/fragment_calendar">
-        <action
-            android:id="@+id/action_calendarFragment_to_browserFragment"
-            app:destination="@id/browserFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/browserFragment"
-        android:name="com.procreations.susansgreeencleaning.BrowserFragment"
-        android:label="fragment_browser"
-        tools:layout="@layout/fragment_browser" >
-        <action
-            android:id="@+id/action_browserFragment_to_welcomeFragment"
-            app:destination="@id/welcomeFragment" />
-        <action
-            android:id="@+id/action_browserFragment_to_sorryFragment"
-            app:destination="@id/sorryFragment" />
-        <action
-            android:id="@+id/action_browserFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
-        <action
-            android:id="@+id/action_browserFragment_to_reminderFragment"
-            app:destination="@id/reminderFragment" />
-        <action
-            android:id="@+id/action_browserFragment_to_calendarFragment3"
-            app:destination="@id/calendarFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_calendar"/>
 </navigation>

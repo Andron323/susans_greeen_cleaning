@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.procreations.susansgreeencleaning"
-        minSdk 21
+        minSdk 22
         targetSdk 33
         versionCode 1
         versionName "1.0"
@@ -61,5 +61,15 @@ dependencies {
 
 //    Calendar custom
 //    implementation 'com.github.mahimrocky:EventCalender:v1.0.0'
+
+//    SwiperHelper
+    implementation 'com.tutorialsbuzz.halfswipe:halfswipe:1.0.0'
+
+//    MultiFab
+    implementation 'com.github.clans:fab:1.6.4'
+
+//    Notification
+    implementation "androidx.core:core-ktx:1.6.0"
+
 
 }
